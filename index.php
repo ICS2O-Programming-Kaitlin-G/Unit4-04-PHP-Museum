@@ -28,11 +28,8 @@
 
   <!-- This form collects the user's age & date of visit for their museum visit. -->
   <form action="./results.php" method="post" target="museum-price">
-    <label for="user-age">Input your age.</label>
+    <label id="age-of-user" for="user-age">Input your age.</label>
     <input type="number" id="user-age" step="1" min="0" max="122" placeholder="Age" name="user-age">
-    <br>
-    <br>
-    <input type="submit" value="Admission Price">
     <br>
     <br>
 
@@ -42,15 +39,21 @@
     <select name="day" id="day">
       <option value="mon">Monday</option>
       <option value="tues">Tuesday</option>
-            <option value="wed">Wednesday</option>
-            <option value="thurs">Thursday</option>
-            <option value="fri">Friday</option>
-            <option value="sat">Saturday</option>
-            <option value="sun">Sunday</option>
-          </select>
-          <br>
-          <br>
-          <br>
+      <option value="wed">Wednesday</option>
+      <option value="thurs">Thursday</option>
+      <option value="fri">Friday</option>
+      <option value="sat">Saturday</option>
+      <option value="sun">Sunday</option>
+    </select>
+    <br>
+    <br>
+    <br>
+
+    <!-- button -->
+    <input type="submit" value="Admission Price">
+    <br>
+    <br>
+  </form>
   <!-- this section of the code will tell the user what  -->
   <iframe id="museum-price" name="museum-price">
   </iframe>
